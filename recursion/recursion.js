@@ -7,5 +7,15 @@ const fibonacci = function(n) {
 
 };
 
+const factorial = function(n) {
+  if (n <= 1) {
+    return 1;
+  }
+  return n * factorial(n - 1);
+}
 
-module.exports = fibonacci;
+
+module.exports = {
+  fibonacci,
+  factorial
+};
